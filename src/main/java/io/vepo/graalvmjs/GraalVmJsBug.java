@@ -25,7 +25,7 @@ public class GraalVmJsBug {
                          print('' + somePojo.toString()); // It works fine
                          print('' + someHashMap.toString()); // It works fine
                          print('' + somePojo); // It works fine
-                         print('' + someHashMap); // Throws NullPointerException
+                         print('' + someHashMap); // Throws org.graalvm.polyglot.PolyglotException
                          return 'true';
                      }
                      """;
